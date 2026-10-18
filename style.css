@@ -1,0 +1,100 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.main-header {
+  background: linear-gradient(135deg, #002855, #0056b3);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border-top: 4px solid #0056b3;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.instructor-card {
+  border-top-color: #ffc107; /* Distingue al instructor */
+  background: #fffdf5;
+}
+
+.card-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #002855;
+}
+
+.badge {
+  background: #e2e8f0;
+  color: #4a5568;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.instructor-card .badge {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.card-body {
+  padding: 15px 20px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.card-body p {
+  margin: 8px 0;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a202c;
+  color: #a0aec0;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
